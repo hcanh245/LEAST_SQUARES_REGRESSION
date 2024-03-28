@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Tìm hàm số bằng pp bình phương nhỏ nhất</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="grbSelectFunc">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>380</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Chọn dạng hàm số</string>
+    </property>
+    <widget class="QRadioButton" name="rdo1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>360</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hàm số tuyến tính: y = ax + b</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdo2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>360</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hàm lũy thừa cơ số tự nhiên: y = ae</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdo3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>360</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hàm lũy thừa: y = ax</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblExp_2">
+     <property name="geometry">
+      <rect>
+       <x>202</x>
+       <y>53</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>bx</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblExp_3">
+     <property name="geometry">
+      <rect>
+       <x>132</x>
+       <y>83</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>b</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdo4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>360</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hàm bậc 2: y = ax + bx + c</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl2">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>113</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grbTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>380</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Bảng giá trị thực tế</string>
+    </property>
+    <widget class="QSpinBox" name="spbNum">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCre">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tạo</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetY" native="true">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>100</y>
+       <width>330</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="layoutY"/>
+    </widget>
+    <widget class="QLabel" name="lbl_Y">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widgetX" native="true">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>60</y>
+       <width>330</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="layoutX"/>
+    </widget>
+    <widget class="QLabel" name="lbl_X">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grbReturn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>380</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Kết quả</string>
+    </property>
+    <widget class="QPushButton" name="btnExec">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thực thi</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHamso">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>360</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Hàm số cần tìm là: y = </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblExp">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>50</y>
+       <width>230</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <zorder>grbReturn</zorder>
+   <zorder>grbSelectFunc</zorder>
+   <zorder>grbTable</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
